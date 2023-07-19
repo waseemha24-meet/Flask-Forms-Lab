@@ -19,8 +19,7 @@ def login():
 		password=request.form['password']
 		if usernamex == username and passwordx == password:
 			return redirect(url_for('home'))
-	else:
-		return render_template('login.html')
+	return render_template('login.html')
 
 
 facebook_friends=["Loai","Yonathan","Adan", "George", "Fouad", "Celina"]
